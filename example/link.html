@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KongaPay Test Account Linking Test</title>
+  <style>
+    .container{
+      width: 760px;
+      margin: 0 auto;
+    }
+    .pull_left{
+      float: left;
+    }
+    td{
+      text-align: center;
+    }
+  </style>
+
+</head>
+<body>
+<div class="container">
+  <header>
+    <img src="https://media03.konga.com/Landing_pages/mob-app/kongapaylogo.png">
+  </header>
+
+  <div class="pull_left">
+      <div id="kpay-pay-component"></div>
+  </div>
+</div>
+<script src="http://sandbox.kongapay.com/plugins/web-plugin/js/kpay-sand.min.js"></script>
+<script>
+  new KongaPay({
+    buttonSize: 160,
+    merchantId: "testmerchant",
+    merchantName: "KongaPay Test",
+    callBack: "http://localhost/kongapay/callback.php",
+    description: "Testing KongaPay Account Linking"
+  });
+</script>
+</body>
+</html>

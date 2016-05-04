@@ -140,11 +140,12 @@ This follows the standard OAuth 2.0 flow where:
 4. KongaPay returns the access token and refresh token on success of step 3 request
 5. Client then uses the access token to request resources from the server.
 
+######Base URL for OAuth: 
 ```
-###### Base URL for OAuth: 
-**Sandbox Environment** - https://staging-auth.kongapay.com
+Sandbox Environment - https://staging-auth.kongapay.com
 
-**Live Environment** - https://auth.kongapay.com
+Live Environment - https://auth.kongapay.com
+
 ```
 Step I
 
@@ -234,9 +235,11 @@ Server returns another token.
 This allows Merchants to debit a linked KongaPay Account using the Payment Token provided by KongaPay.
 
 ######Base URL for KongaPay: 
-**SandBox Environment** - https://api-sandbox.kongapay.com/v3/
+```
+SandBox Environment - https://api-sandbox.kongapay.com/v3/
 
-**Live Environment** - https://api.kongapay.com
+Live Environment - https://api.kongapay.com
+```
 
 ##### Definition of parameters:
 - **merchant_id** - Merchant Id provided by KongaPay. String (Maximum of 15).
@@ -289,12 +292,12 @@ Merchants can always requery transactions made using KongaPay. This part of the 
 
 This allow Merchants to requery a KongaPay transaction using the payment_reference used in making payment.
 
-Base URL for KongaPay: 
+######Base URL for KongaPay: 
+```
+Sandbox Environment - `https://api-sandbox.kongapay.com/v3`
 
-**Sandbox Environment** - `https://api-sandbox.kongapay.com/v3`
-
-**Live Environment** - `https://api.kongapay.com`
-
+Live Environment - `https://api.kongapay.com`
+```
 **Definition of parameters:**
 
 - **merchant_id** - Merchant Id provided by KongaPay. String (Maximum of 15).

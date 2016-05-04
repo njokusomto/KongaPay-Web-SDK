@@ -140,11 +140,12 @@ This follows the standard OAuth 2.0 flow where:
 4. KongaPay returns the access token and refresh token on success of step 3 request
 5. Client then uses the access token to request resources from the server.
 
+```
 ###### Base URL for OAuth: 
 **Sandbox Environment** - https://staging-auth.kongapay.com
 
 **Live Environment** - https://auth.kongapay.com
-
+```
 Step I
 
 To request for an access code 

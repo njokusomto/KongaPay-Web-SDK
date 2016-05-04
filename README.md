@@ -75,7 +75,7 @@ On the page where the Merchant wants to receive payment the link to the Javascri
 
 Sample: 
 
-`<script src="http://kpay-sand.bamboo-kongapay-fe.igbimo.com/plugins/web-plugin/js/kpayLink.min.js"></script>`
+`<script src="https://sandbox.kongapay.com/plugins/web-plugin/js/kpayLink.min.js"></script>`
 ```
 Create Javascript Object
 Javascript object is to built for the transaction. Sample Script:
@@ -102,7 +102,7 @@ description : “{description}”
 **description:** A short description of the transaction. String (Maximum of 30 characters)
 
 ##### 3. Add Kongapay Payment Div
-Add `<div id="kpay_link_component"></div>` where you want KongaPay button to appear. This will add an “Authorize KongaPay” button as seen in this image. http://take.ms/cf81C.
+Add `<div id="kpay-link-component"></div>` where you want KongaPay button to appear. This will add an “Authorize KongaPay” button as seen in this image. http://take.ms/cf81C.
 
 ##### 4. User login
 When a user clicks on the Authorize KongaPay button a popup is displayed where the customer enters his/her phone number linked to KongaPay. http://take.ms/L3OmO. The user will enter his phone number and click on login.
@@ -140,7 +140,7 @@ This follows the standard OAuth 2.0 flow where:
 4. KongaPay returns the access token and refresh token on success of step 3 request
 5. Client then uses the access token to request resources from the server.
 
-Base URL for OAuth: https://staging-kongapayauth.igbimo.com
+Base URL for OAuth: https://staging-auth.kongapay.com
 
 Step I
 
@@ -229,7 +229,7 @@ Server returns another token.
 
 This allows Merchants to debit a linked KongaPay Account using the Payment Token provided by KongaPay.
 
-Base URL for KongaPay: http://kpay-sand.bamboo-kongapay-mw.igbimo.com/v3/
+Base URL for KongaPay: https://api-sandbox.kongapay.com/v3/
 
 ##### Definition of parameters:
 - **merchant_id** - Merchant Id provided by KongaPay. String (Maximum of 15).
